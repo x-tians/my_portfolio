@@ -200,8 +200,9 @@ footer{
 .about-section{
     width:100%;
     flex-direction: row;
-    justify-content:flex-end;
     align-items: center;
+    display: flex;
+    justify-content: center;
     
 }
 .about-img img{
@@ -227,12 +228,11 @@ footer{
     height:100%;
     background: url('../assets/mohammad-rahmani-W-LQbAUhE64-unsplash.jpg') no-repeat;
     background-size:100% 100%;
-    
     padding:3px;
     filter: blur(12px);
 }
 .card-panel-about{
-    width:400px;
+    width:600px;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -240,7 +240,6 @@ footer{
     align-items: center;
     padding:30px;
     margin:7px;
-    right:250px;
     position: absolute;
 }
 .card-panel-about button{
@@ -259,6 +258,7 @@ footer{
     text-align: center;
     font-size:medium;
     color: white;
+    text-shadow: 1.9px 1px black;
 }
 .card-panel-about strong,.card-panel-about h2,.card-panel-about{
     font-family: 'Playfair Display', Georgia, serif;
@@ -571,13 +571,18 @@ font-size: small;
     color:#051c33db;
 }
 article{
-    width:100%;
+    width:95%;
     padding:20px;
     overflow: auto;
     margin-top: 12px;
     box-shadow: 0 0 2px #007bff, 0 0px 0px rgb(0 0 0 / 20%);
     border-radius: 3px;
     border-bottom: 3px solid #007bff;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 article h3{
     font-size: 22pt;
@@ -599,6 +604,10 @@ article a{
     font-family: 'Arial';
     font-size: 11pt;
     text-decoration: none;
+}
+article h4 a{
+    font-weight: 100;
+    font-size: medium;
 }
 
 
